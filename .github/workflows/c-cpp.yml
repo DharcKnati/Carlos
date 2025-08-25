@@ -15,9 +15,3 @@ jobs:
     - uses: actions/checkout@v4
     - name: g++
       run: g++ main.cpp -o app.so
-      
-    - name: Upload artifacts
-    - uses: actions/upload-artifact@v4
-      with:
-        name: my-artifact
-        path: Builds/app.so
