@@ -17,7 +17,7 @@ jobs:
       run: g++ main.cpp -o app
 
 - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        name: build
-          path: build/        
+        name: my-build-output
+          path: ./build     
